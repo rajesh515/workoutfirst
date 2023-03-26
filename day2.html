@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 2 - Cardio and core</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Day 2 - Cardio and core</h1>
+	</header>
+
+	<main>
+		<h2>Workout:</h2>
+		<ol>
+			<li>Warm-up: 5-10 minutes of light cardio (e.g. walking, cycling, or rowing)</li>
+			<li>Treadmill intervals: 20 minutes (1 minute of sprinting followed by 1 minute of rest)</li>
+			<li>Stationary bike: 20 minutes (alternating between 1 minute of high resistance and 1 minute of low resistance)</li>
+			<li>Rowing machine: 10 minutes of steady-state rowing</li>
+			<li>Plank: 3 sets of 30-60 seconds</li>
+			<li>Russian twists: 3 sets of 12-15 reps</li>
+			<li>Bicycle crunches: 3 sets of 12-15 reps</li>
+			<li>Cool-down: 5-10 minutes of stretching</li>
+		</ol>
+
+		<div class="checkboxes">
+			<h2>Check off completed exercises:</h2>
+			<form>
+				<input type="checkbox" id="warmup">
+				<label for="warmup">Warm-up</label><br>
+
+				<input type="checkbox" id="treadmill">
+				<label for="treadmill">Treadmill intervals</label><br>
+
+				<input type="checkbox" id="stationary">
+				<label for="stationary">Stationary bike</label><br>
+
+				<input type="checkbox" id="rowing">
+				<label for="rowing">Rowing machine</label><br>
+
+				<input type="checkbox" id="plank">
+				<label for="plank">Plank</label><br>
+
+				<input type="checkbox" id="russian">
+				<label for="russian">Russian twists</label><br>
+
+				<input type="checkbox" id="bicycle">
+				<label for="bicycle">Bicycle crunches</label><br>
+			</form>
+		</div>
+
+		<button onclick="checkAll()">Check All</button>
+		<button onclick="uncheckAll()">Uncheck All</button>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

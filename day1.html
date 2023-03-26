@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 1 - Full-body strength training</title>
+	<style>
+		/* Add some styles to make the checkboxes look like switches */
+		.switch {
+			position: relative;
+			display: inline-block;
+			width: 60px;
+			height: 34px;
+			margin: 10px;
+		}
+
+		.switch input {
+			opacity: 0;
+			width: 0;
+			height: 0;
+		}
+
+		.slider {
+			position: absolute;
+			cursor: pointer;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #ccc;
+			-webkit-transition: .4s;
+			transition: .4s;
+			border-radius: 34px;
+		}
+
+		.slider:before {
+			position: absolute;
+			content: "";
+			height: 26px;
+			width: 26px;
+			left: 4px;
+			bottom: 4px;
+			background-color: white;
+			-webkit-transition: .4s;
+			transition: .4s;
+			border-radius: 50%;
+		}
+
+		input:checked + .slider {
+			background-color: #2196F3;
+		}
+
+		input:focus + .slider {
+			box-shadow: 0 0 1px #2196F3;
+		}
+
+		input:checked + .slider:before {
+			-webkit-transform: translateX(26px);
+			-ms-transform: translateX(26px);
+			transform: translateX(26px);
+		}
+	</style>
+</head>
+<body>
+	<!-- Add a header with the exercise plan name -->
+	<h1>Day 1 - Full-body strength training</h1>
+	
+	<!-- Add a list of exercises with checkboxes -->
+	<h2>Exercises:</h2>
+	<ul>
+		<li><label class="switch"><input type="checkbox"><span class="slider"></span></label> Warm-up: 5-10 minutes of light cardio (e.g. walking, cycling, or rowing)</li>
+		<li><label class="switch"><input type="checkbox"><span class="slider"></span></label> Squats: 3 sets of 12-15 reps</li>
+		<li><label class="switch"><input type="checkbox"><span class="slider"></span></label> Lunges: 3 sets of 12-15 reps (per leg)</li>
+		<li><label class="switch"><input type="checkbox"><span class="slider"></span></label> Chest press: 3 sets of 12-15 reps</li>
+		<li><label class="switch"><input type="checkbox"><span class="slider"></span></label> Seated rows: 3 sets of 12-15 reps</li>
+		<li><label class="switch"><input type="checkbox"><span class="slider"></span></label> Overhead press: 3 sets of 12-15 reps</li>
+		<li><label class="switch"><input type="checkbox"><span class="slider"></span></label> Bicep curls: 3 sets of 12-15 reps</li>
+		<li><label class="switch"><input type="checkbox"><span class="slider"></span></label> Tricep pushdowns: 3 sets of 12-15 reps</li>
